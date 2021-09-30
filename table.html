@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: green;
+            height: 100px;
+        }
+        main {
+            background-color: bisque;
+            /*height: 500px;*/
+        }
+        .clearfix:after {
+            content: "";
+            display: table;
+            table-layout: fixed;
+            clear: both;
+        }
+        section, aside {
+            float: left;
+        }
+        section {
+            border: 1px solid #00c73c;
+        }
+        aside {
+            border: 1px solid blueviolet;
+        }
+        footer {
+            background-color: aqua;
+            height: 100px;
+        }
+        nav ul {
+            display: table;
+        }
+        nav ul li {
+            display: table-cell;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <header>
+        header
+        <nav>
+            <ul class="clearfix">
+                <li><a href="과제1.html">과제1</a></li>
+                <li><a href="layout.html">layout</a></li>
+                <li><a href="units.html">units</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="clearfix">
+        <section>section</section>
+        <aside>aside</aside>
+    </main>
+    <footer></footer>
+</div>
+</body>
+</html>

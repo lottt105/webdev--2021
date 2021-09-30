@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        li {
+            flex: 1;
+            background-color: aqua;
+        }
+        li:first-child {
+            /*order: 1;*/
+            background-color: #00c73c;
+        }
+        li:last-child {
+            /*flex: grow shrink basis*/
+            flex: 1 0 300px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>license.html</li>
+    <li>shortcut.html</li>
+    <li>else.html</li>
+</ul>
+</body>
+</html>

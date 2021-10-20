@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>과제6</title>
+    <style>
+        p {
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>프론트엔드 개발자 지원서</h1>
+<div><strong>HTML, CSS, JAVASCRIPT</strong>에 대한 기술적 이해와 많은 경험이 있는 분을 찾습니다.</div>
+<hr>
+<form>
+    <fieldset>
+        <legend>입사지원서</legend>
+        <p>개인 정보</p>
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" name="name" id="name" required>
+            </li>
+            <li>
+                <label for="tel">연락처</label>
+                <input type="tel" name="tel" id="tel" required>
+            </li>
+            <li>
+                <label for="major">학과</label>
+                <select id="major">
+                    <option selected>컴퓨터 공학과</option>
+                    <option>컴퓨터 교육과</option>
+                </select>
+            </li>
+        </ul>
+        <p>지원 분야</p>
+        <ul>
+            <li>
+                <input type="radio" name="field" value="p"> 웹 퍼블리싱
+            </li>
+            <li>
+                <input type="radio" name="field" value="a"> 웹 어플리케이션
+            </li>
+            <li>
+                <input type="radio" name="field" value="d"> 웹 개발 지원
+            </li>
+        </ul>
+        <p>지원 동기</p>
+        <textarea cols="40" rows="10" placeholder="지원동기를 작성해주세요."></textarea><br>
+        <div>
+            <input type="submit" value="접수하기">
+            <input type="reset" value="다시작성">
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

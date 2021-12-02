@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+ul {
+    list-style: none;
+}
+ol {
+    margin-left: 30px;
+}
+li {
+    margin: 10px 0;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+    grid-column: span 3;
+    width: 100%;
+    height: 50px;
+    background-color: #E0EDD8;
+}
+.logo {
+    margin-left: 30px;
+    line-height: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+main {
+    grid-column: span 3;
+    display: flex;
+    height: 100%;
+}
+section {
+    flex: 1;
+    height: 100%;
+}
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: 50px 50px 0 50px;
+}
+.name {
+    width: 180px;
+    margin: 0 35px 30px 35px;
+    text-align: center;
+    font-weight: bold;
+}
+.privacy {
+    margin: 40px 35px;
+}
+.github {
+    width: 30px;
+    height: 30px;
+}
+.cl {
+    font-weight: bold;
+    margin: 30px 0 10px 0;
+}
+aside {
+    flex: 2;
+    height: 100%;
+    background-color: #D8EBED;
+}
+.project {
+    font-weight: bold;
+    margin: 10px;
+}
+table {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+tr, td {
+    padding: 10px;
+}
+.item {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+footer {
+    grid-column: span 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #6C7268;
+}
+.thank {
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}

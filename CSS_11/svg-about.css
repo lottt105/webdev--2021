@@ -1,0 +1,80 @@
+@charset "utf-8";
+:root {
+    --color1: #CCCCFF;
+    --color2: #6495ED;
+    --color3: #40E0D0;
+    --color4: #9FE2BF;
+    --color5: #DE3163;
+    --color6: #FF7F50;
+    --color7: #FFBF00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 955px;
+    height: 221px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper path {
+    animation: animation 1s linear forwards;
+}
+svg {
+    animation: fill 0.5s linear forwards 3.4s;
+}
+@keyframes animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: var(--color2);
+    }
+}
+svg path {
+    stroke: var(--color2);
+    stroke-width: 5;
+    animation: stroke 1s linear forwards;
+}
+svg path:nth-child(1) {
+    stroke-dasharray: 941px;
+    stroke-dashoffset: 941px;
+}
+svg path:nth-child(2) {
+    stroke-dasharray: 1119px;
+    stroke-dashoffset: 1119px;
+    animation-delay: 0.3s;
+}
+svg path:nth-child(3) {
+    stroke-dasharray: 994px;
+    stroke-dashoffset: 994px;
+    animation-delay: 0.6s;
+}
+svg path:nth-child(4) {
+    stroke-dasharray: 988px;
+    stroke-dashoffset: 988px;
+    animation-delay: 0.9s;
+}
+svg path:nth-child(5) {
+    stroke-dasharray: 743px;
+    stroke-dashoffset: 743px;
+    animation-delay: 1.2s;
+}
